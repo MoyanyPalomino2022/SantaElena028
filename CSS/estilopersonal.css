@@ -1,0 +1,142 @@
+/*===== CLASS CSS DE PERSONAL ===== */
+
+.section-p{
+  margin-top: 3%;
+
+}
+
+.section-title-p{
+  position: relative;
+  font-size: 3rem;
+  color: #FF0000;
+
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+/*===== LAYOUT =====*/
+.bd-grid-p{
+  max-width: 1024px;
+  grid-template-columns: 100%;
+  grid-column-gap: 2rem;
+  width: calc(100% - 2rem);
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+}
+
+/*===TABLA====*/
+tr.encabezado{
+  text-align: center;
+  background-color: #FF0000;
+  padding-top: 80px;
+  font-size: 20px;
+}
+
+th{
+  color: #fff;
+  padding: 5px;
+}
+
+table.tabla{
+  width: 90%;
+}
+
+tr.contenido_tabla{
+  font-size: 20px;
+  border-bottom: 1px solid #FF0000;
+}
+
+tr.contenido_tabla:hover{
+  background-color: rgb(236, 169, 169);
+  cursor: pointer;
+ 
+}
+.tabla{
+  height: calc(100vh - 3rem);
+  row-gap: 2rem;
+}
+.tabla__data{
+  align-self: center;
+}
+.tabla__title-p{
+  font-size: 3.5rem;
+  margin-bottom:  2.5rem;
+}
+.tabla__title-p-color{
+  color: #4070F4;
+}
+
+.IMG_PERSONAL img{
+  width: 85%;
+  padding-left: 7%;
+  height: 500px;
+  box-shadow: 6px 10px 10px rgba(0,0,0,.5);
+}
+/* ===== MEDIA QUERIES DE PERSONAL=====*/
+@media screen and (min-width: 768px){
+ 
+  .section-p{
+    padding-top: 0.5rem;
+    padding-bottom: 3rem;
+   
+  }
+  .section-title-p{
+    margin-bottom: 3rem;
+    margin-right: 10%;
+     
+  }
+  .section-title-p::after{
+    width: 80px;
+    top: 1rem;
+  }
+
+  .about__container, .skills__container{
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    text-align: initial;
+  }
+  
+}
+
+@media screen and (min-width: 1024px){
+  .bd-grid-p{
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 800px){
+.IMG_PERSONAL img{
+  width: 96%;
+  height: 280px;
+  margin-left: 0px;
+  box-shadow: 6px 5px 10px rgba(0,0,0,.5);
+  padding-left: 2%;
+}
+}
+@media screen and (max-width: 500px){
+  .tabla{
+     width: 50%;
+  }
+  .tr.encabezado th{
+  font-size: 8px;
+}
+.tr.contenido_tabla td{
+  font-size: 8px;
+}
+  }
+
+  @media screen and (max-width: 400px){
+    .tabla{
+       width: 90%;
+    }
+    .tr.encabezado th{
+    font-size: 7px;
+  }
+  .tr.contenido_tabla td{
+    font-size: 7px;
+  }
+    }
+  

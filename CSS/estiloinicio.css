@@ -1,0 +1,177 @@
+/* MENU INICIO */
+
+
+.section{
+  padding: 2%;
+  padding-top: 3.5%;
+  padding-bottom: 0.5%;
+  
+
+ 
+}
+.section-tit{
+    position: relative;
+    font-size: 3rem;
+    color: #0059ff;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-weight: bold;
+   
+  }
+  .bloque__subt{
+      text-align: center;
+      font-size: 3rem;
+      color: #ff6e0d;
+      display: block; 
+      font-weight: bolder;
+      font-family: 'Lobster', 'sans-serif'
+
+   }
+  .bloque__tex{
+    text-align: center;
+    font-size: 3rem;;
+    color: #ff6e0d;
+    padding-bottom: 5%; 
+    padding-left: 50; 
+    display: block;
+    font-weight: bolder;
+    font-family: 'Lobster', 'sans-serif'
+    
+  }
+  
+
+  .bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .bloque__img{
+    justify-self: center;
+  }
+  .bloque__img img{
+    width: 200px;
+    border-radius: .5rem;
+    margin-bottom: 5%;
+  }
+  .bloque__text{
+    text-align: justify;
+    font-size: 2rem;;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+/*--ESLOGAN*/
+.ESLOGAN {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.8rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 40%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+ 
+  }
+
+  .ESLOGAN b{
+    position: relative;
+    color: #ff6e0d;
+    font-size:23px;
+   }
+  .ESLOGAN b span{
+   position: absolute;
+   right: 0;
+   width: 0;
+   background-color: #ffffff;
+   border-left: 1px solid rgb(70, 33, 33);
+   font-weight: bolder;
+   animation: maquina 8s infinite alternate;  
+  }
+   .eslogan1{
+     width: 40%;
+     float: left;
+   }
+   .eslogan2{
+    padding-top: 13%;
+    width: 60%;
+    float: right;
+  }
+   .eslogan1 b{
+     font-weight: bolder;
+     color: rgb(0, 0, 0);
+     font-size: 25px;
+   }
+    .eslogan1 img{
+      width: 88%;
+    }
+  /*MEDIA QUERIS*/
+  @media screen and (min-width: 768px){
+    .bloque__container{
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      text-align: initial;
+    }
+    .bloque__img img{
+      width: 300px;
+    }
+
+    
+  }
+  @media screen and (min-width: 1024px){
+    .bd-grid{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+
+
+
+
+  @media screen and (max-width: 1024px){
+    .eslogan1 img{
+      width: 90%;
+    }
+  }
+
+    /* ===== MEDIA QUERIES DE INICIO=====*/
+/*EFECTO DE MOVIMIENTO DE ESLOGAN*/
+@keyframes maquina{
+    from{
+      width: 100%;
+    }
+    to{
+      width: 0;
+    }
+  }
+
+  @media screen and (max-width: 380px){
+  .eslogan1{
+      padding-top: 0.1%;
+      width: 90%;   
+    }  
+  
+  .ESLOGAN{
+    margin-bottom: 90%;
+  }
+  .eslogan2{
+    padding-left: 2%;
+    width: 90%;
+    font-size: 5px;
+  }
+}
+
+@media screen and (max-width: 600px){
+   .section-tit{
+    font-size: 2.2rem;
+}
+  .bloque__subt{
+    font-size: 2.1rem;
+  }
+  .bloque__tex{
+    font-size: 2.1rem;
+  }
+}

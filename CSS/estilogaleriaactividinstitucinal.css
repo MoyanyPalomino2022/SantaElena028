@@ -1,0 +1,133 @@
+
+img{
+    width: 100%;
+}
+
+.di{
+    padding-left: 3%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+   
+}
+
+.fotoBotonS{
+    border-radius: 35px;
+    background-color: rgb(213, 219, 219);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 95.9%;
+    padding: 1%;
+    text-align: center;
+          
+}
+
+.p-galeria{
+   font-size: 20px;
+   padding: 1px;
+   
+}
+
+/*estilo a botonos*/
+.buttonS{
+    color:white;
+    background-color: rgb(52, 73, 94);
+    font-size: 20px;
+    border-radius: 150%;
+    padding: 3%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-style: none;
+
+}
+
+.buttonSA{
+    background-color: rgb(246, 221, 204);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 1.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-style: none;
+}
+
+
+
+/*al pasar el mouse por encima del boton*/
+
+.buttonSA{
+    transition-duration: 0.4s;
+}
+
+.buttonSA:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.buttonS{
+    transition-duration: 0.4s;
+}
+
+.buttonS:hover{
+    background-color: white;
+    color: black;
+}
+
+.sliderP{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: auto auto;
+    padding-left: 2%;
+    
+}
+
+@media screen and (max-width: 500px){
+
+    .sliderP{
+        display: grid;
+        grid-column-gap: 20%;
+        grid-template-columns: auto;
+        padding: 0%;
+    }
+
+    .di{
+        padding-left: 0%;
+        width: 100%;
+        height: 360px;
+    }
+
+    body{
+        margin: 0px;
+        padding: 0px ;
+    }
+
+    .fotoBotonS{
+        border-radius: 20px;
+        background-color: rgb(213, 219, 219);
+        padding-bottom: 4%;
+        width: 99%;
+        
+    }
+
+}
+
+.galeriauno{
+padding-top: 5%;
+text-align: center;
+color: #9f2020;
+padding-bottom: 1%;
+font-size: 1.3rem;
+font-weight: bold;
+}
+
+@media (max-width: 500px){
+    .galeriauno{
+        padding-top: 1%;
+    }
+
+}
+
+@media (max-width: 500px){
+.galeriauno{
+    font-size: 1rem;
+    }
+}

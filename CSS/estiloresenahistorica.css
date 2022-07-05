@@ -1,0 +1,64 @@
+/*RESEÑA HISTORICA*/
+.sectiones{
+    padding-top: 7%;
+  }
+  .section-titleh{
+    position: relative;
+    font-size: 2rem;
+    color: #4070F4;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .bd-gd{
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+  
+  }
+  .historia__img{
+    justify-self: center;
+    width: auto;
+    height: auto;
+    
+  }
+  .historia__img img{
+    width: 99%;
+    border-radius: .5rem;
+    height: 250px;
+  
+  }
+  .historia__text{
+    text-align: justify;
+    font-size: 1.3rem;;
+    color: rgb(0, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* ===== MEDIA QUERIES=====*/
+@media screen and (min-width: 768px){
+    .historia__img img{
+      width: 300px;
+    }
+  }
+  @media screen and (min-width: 1024px){
+    .bd-gd{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  @media screen and (max-width: 1024px){
+    .sectiones{
+      padding-top: 5%;
+    }
+  }
+    @media screen and (max-width: 1024px){
+    .historia__text{
+      font-size: 1rem;
+     }
+    }

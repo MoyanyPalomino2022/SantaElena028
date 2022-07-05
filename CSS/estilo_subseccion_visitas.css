@@ -1,0 +1,139 @@
+.imagenes_subgaleria_visitas {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    width: 97%;
+    font-size: 0;
+    padding-top: 3%;
+    padding-left: 5%;
+  }
+  
+  .primera_imagen_subvisitas,
+  .imagen_subvisitas {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .sub__imagenes__visitas {
+    display: inline-block;
+    min-height: 400px;
+    width: 50%;
+  }
+  
+  .primera_imagen_subvisitas {
+    background-image: url('../IMG/VISITAS/bomberos3.png');
+  }
+  
+  .imagen_subvisitas:nth-child(2) {
+    background-image: url('../IMG/VISITAS/bomberos2.png');
+  }
+  
+  .imagen_subvisitas:nth-child(3) {
+    background-image: url('../IMG/VISITAS/bomberos1.png');
+  }
+  
+  .imagen_subvisitas:nth-child(4) {
+    background-image: url('../IMG/VISITAS/visita_bomberos.png');
+  }
+  
+
+  .enlace_galeria_visitas{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-top: 3%;
+  }
+  .botonenlace_galeria__visitas{
+    background-color: rgb(38, 0, 255);
+    border: none;
+    color: #ffffff;
+    padding: 10px 3px;
+    width: 20%;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 8px 4px;
+    cursor: pointer;
+    transition-duration: 2s;
+
+    font-weight: bolder;
+}
+.botonenlace_galeria__visitas:hover{
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 20%;
+    background-color: rgb(255, 123, 0); 
+}
+
+
+  @supports (display: grid) {
+    .sub__imagenes__visitas {
+      width: auto;
+      min-height: 0;
+    }
+    
+    .primera_imagen_subvisitas {
+      grid-column: 1 / span 2;
+      grid-row: 1 / 50;
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 75px), 0 100%);
+    }
+  
+    .imagen_subvisitas:nth-child(2) {
+      grid-column: 1 / span 1;
+      grid-row: 50 / 100;
+      -webkit-clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+      clip-path: polygon(0 14%, 0 86%, 90% 81%, 100% 6%);
+      margin-top: -73px;
+    }
+  
+    .imagen_subvisitas:nth-child(3) {
+      grid-column: 2 / span 1;
+      grid-row: 50 / 100;
+      -webkit-clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+      clip-path: polygon(13% 6%, 4% 84%, 100% 100%, 100% 0%);
+      margin-top: -73px;
+      margin-left: -15%;
+      margin-bottom: 18px;
+    }
+  
+    .imagen_subvisitas:nth-child(4) {
+      grid-column: 1 / span 2;
+      grid-row: 100 / 150;
+      -webkit-clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+      clip-path: polygon(45% 0, 100% 15%, 100% 100%, 0 100%, 0 5%);
+      margin-top: -107px;
+    }
+  }
+
+
+  @media screen and (max-width: 1155px){
+  .botonenlace_galeria__visitas{
+  
+    padding: 10px 8px;
+    width: 20%;
+    font-size: 15px;
+    margin: 8px 4px;
+    text-align: center;
+}
+  }
+
+  @media screen and (max-width: 760px){
+    .botonenlace_galeria__visitas{
+      padding: 10px 8px;
+      width: 25%;
+      font-size: 13px;
+      margin: 8px 4px;
+      text-align: center;
+  }
+    }
+
+    @media screen and (max-width: 560px){
+      .botonenlace_galeria__visitas{
+      padding: 10px 1px;
+      font-size: 15px;
+      width: 40%;
+      text-align: center;
+      }}

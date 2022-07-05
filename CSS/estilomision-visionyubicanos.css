@@ -1,0 +1,113 @@
+
+/* MISION , VISION Y UBICANOS*/
+.section{
+    padding-top:5%;
+  }
+
+
+  /* MISION */
+  .section-title-mision{
+    position: relative;
+    font-size: 3rem;
+    color: #f44c40;
+    margin-top: 1rem;
+    margin-bottom: 4%;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+
+
+/* VISION */
+  .section-title{
+    position: relative;
+    font-size: 3rem;
+    color: #FF00D1 ;
+    margin-top: 1rem;
+    margin-bottom: 4%;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+
+
+/* UBICANOS7*/
+  .section-title-ubicanos{
+    position: relative;
+    font-size: 3rem;
+    color: #3AFF00;
+    margin-top: 1rem;
+    margin-bottom: 4%;
+    text-align: center;
+    font-weight: bold;
+  }/*
+
+
+/*Posición de bloques*/
+  .bd-grid{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 0.0rem;
+    margin-right: 1rem;
+    
+  }
+  .bloque{
+    padding-bottom: 8.5%;
+  }
+  .bloque__img{
+    justify-self: center;
+  }
+  .bloque__img img{
+    width: 200px;
+    border-radius: .5rem;
+    margin-bottom: 5%;
+  }
+  .bloque__text{
+    padding: 3%;
+    border-radius: 5%;
+    background-color: rgb(245, 222, 222);
+    text-align: justify;
+    font-size: 1.3rem;;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+.correoIEN{
+  font-size: 22px;
+  color: #2d3e6d;
+  text-align: center;
+}
+
+  /* ===== MEDIA QUERIES DE MISION, VISION Y UBICANOS=====*/
+@media screen and (min-width: 768px){
+    .bloque__container{
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      text-align: initial;
+    }
+    .bloque__img img{
+      width: 300px;
+    }
+  }
+  @media screen and (min-width: 1024px){
+    .bd-grid{
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media screen and (max-width: 700px){
+    .section{
+     padding-left: 6%;
+     padding-top: 0%;
+   }
+   .section-title-mision{
+     font-size: 2.5rem;
+  }
+   .section-title{
+     font-size: 2.5rem;
+  }
+  .section-title-ubicanos{
+    font-size: 2.5rem;
+  }
+}

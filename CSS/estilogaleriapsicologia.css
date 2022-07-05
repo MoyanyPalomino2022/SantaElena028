@@ -1,0 +1,128 @@
+
+
+/*===== GALERIA */
+
+  .galeriapsicologia__img img{
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .section-galeria{
+    padding-top: 7%;
+  }
+  .section-title-galeria{
+    position: relative;
+    font-size: 2rem;
+    color: #f30049;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight:bolder;
+  }
+
+  
+  .bd-grid-galeria{
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  
+  .work__container{
+    row-gap: 2rem;
+  }
+  .galeriapsicologia__img{
+    box-shadow: 0 4px 25px rgba(14,36,49,.15);
+    border-radius: .5rem;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+  }
+  .galeriapsicologia__img img{
+    transition: 1s;
+    cursor: pointer;
+  }
+  .galeriapsicologia__img img:hover{
+    transform: scale(1.03);
+  }
+  p.info{
+    text-align: center;  
+    padding-top: 2%;
+    font-size: 20px;
+  }
+  
+/*Boton ver más*/
+  #botonvermas{
+    width: 10%;
+    text-align: center;
+    margin-left: 45%;
+    background-color: rgb(255, 123, 0);
+    border:0px;
+    color: azure;
+    font-size: 20px;
+  
+  }
+  #botonvermas:hover{
+    opacity: 0.7;
+  }
+  #vermascontenido{
+    display: none;
+  }
+  
+  /*MEDIA QUERIES*/
+  @media screen and (min-width: 768px){
+    body {
+      margin: 0;
+    }
+    .section {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+    .section-title-galeria {
+      margin-bottom: 3rem;
+    }
+    .section-title-galeria::after{
+      width: 200px;
+      top: 3rem;
+    }
+    .work__container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  @media screen and (min-width: 1024px){
+    .bd-grid-galeria  {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  
+   @media screen and (max-width: 768px){
+    .section-title-galeria{
+      margin-top: 8%;
+    }
+}
+  
+@media screen and (max-width: 768px){
+.galeriapsicologia__img img:hover{
+    transform: scale(1);
+  }}
+
+  @media screen and (max-width: 950px){
+  #botonvermas{
+    width: 15%;
+    margin-left: 42%;
+    font-size: 20px;
+  }}
+  @media screen and (max-width: 600px){
+    #botonvermas{
+      width: 30%;
+      margin-left: 35%;
+      font-size: 20px;
+    }}

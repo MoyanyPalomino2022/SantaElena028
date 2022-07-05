@@ -1,0 +1,30 @@
+/*--FOOTER--Pie de página*/
+.footer{
+    background-color: #0E2431;
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    padding: 1rem 0;
+  }
+  .footer p{
+    font-size: 1rem;
+  }
+  .footer__title{
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .footer__icon{
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 1rem;
+  }
+  .footer__social i {
+    transform: scale(0.5);
+    transition: 0.5s;
+    font-size: 2.5rem;
+  }
+  .footer__social a:hover i{
+    transform: scale(1);
+    text-shadow: 3px 3px 5px rgba(131, 89, 89, 0.411);
+  }
+  

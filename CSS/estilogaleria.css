@@ -1,0 +1,94 @@
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+	
+	padding-left: 5%;
+    padding-top: 5%;
+	padding-bottom: 1%;
+	padding-right: 5%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 500px;
+	text-align: center;
+	color: rgb(255, 102, 0);
+	display: inline-block;
+}   
+
+/*CAROUSEL*/
+.carousel {   
+	padding: 50px; 
+  }
+  .carousel__contenedor {
+	position: relative;  
+  }
+  .carousel__anterior,
+  .carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px); 
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background:none;
+	opacity: 100%; 
+  }
+  .carousel__anterior{
+	left: -30px;  
+  }
+  .carousel__siguiente{
+	right: -30px;  
+  }
+  .carousel__lista{
+	overflow: hidden; 
+  }
+  .carousel__elemento{
+	overflow: center; 
+	padding: 5px;
+  }
+  .carousel__elemento p{
+	text-align: center;
+	color: black;
+	font-weight: bolder;
+  }
+  .carousel__elemento img{
+	height: 300px;
+	width: 100%;
+  }
+  
+  .carousel__anterior:hover,
+  .carousel__siguiente:hover {
+	color: #4070F4;
+  }
+  .carousel__indicadores .glider-dot {
+	display: block; 
+	width: 30px;
+	height: 10px ;
+	
+	border-radius: 0;
+  }
+  .carousel__indicadores .glider-dot:hover {
+	background: #4070F4;
+  }
+  .carousel__indicadores .glider-dot.active {
+	background: #0e3cb9;
+  }
+  
+  
+  
+  
+  @media screen and (max-width: 700px){
+	.carousel__elemento img{
+	  height: 400px;
+	}
+  }
